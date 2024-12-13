@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
-    <link rel="stylesheet" href="/styles.css">
+  <%- include('partials/head'); %>
 </head>
-<body>
-    <% include('partials/header') %>
-    <main>
-        <h2>Welcome!</h2>
-        <p><%= message %></p>
-    </main>
-    <% include('partials/footer') %>
+<body class="container">
+
+<header>
+  <%- include('partials/header'); %>
+</header>
+
+<main>
+  <div class="jumbotron">
+    <h1>Learning EJS </h1>
+    <p>Trying to implement currencyConverter to EJS</p>
+  </div>
+</main>
+
+<footer>
+  <%- include('partials/footer'); %>
+</footer>
+
 </body>
 </html>
